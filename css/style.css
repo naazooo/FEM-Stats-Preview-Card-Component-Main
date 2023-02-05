@@ -1,0 +1,115 @@
+/* MOBILE */
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+  :root{
+    --main-bg-color: hsl(233, 47%, 7%);
+    --card-bg-color: hsl(244, 38%, 16%);
+    --accent-color: hsl(277, 64%, 61%);
+    --wht-main-head: hsl(0, 0%, 100%);
+    --wht-main-p: hsla(0, 0%, 100%, 0.75);
+    --wht-stat-head: hsla(0, 0%, 100%, 0.6);
+  }
+
+  html{font-size: 15px;}
+
+  .main-bg{background-color: var(--main-bg-color);}
+  .card-bg{background-color: var(--card-bg-color);}
+  .accent-bg{background-color: var(--accent-color);}
+  .accent-color{color: var(--accent-color);}
+  .main-head-clr{color: var(--wht-main-head);}
+  .main-p-clr{color: var(--wht-main-p)}
+  .stat-head{color: var(--wht-stat-head);}
+
+  .fw-400{font-weight: 400;}
+  .fw-700{font-weight: 700;}
+
+  .grid{display: grid;}
+  .place-content-center{place-content: center;}
+
+body{
+    font-family: "Inter";
+
+}
+
+.main-card{
+    margin: 0 1.5em;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 654px;
+}
+
+.all-pic picture{
+    mix-blend-mode: multiply; 
+    opacity: 0.8;
+}
+
+.card-body{
+    padding: 2.5em 2em 2em 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2em;
+}
+
+.main-title{
+    font-size: 1.8em;
+    line-height: 1.2em;
+}
+
+.main-desc{
+    margin-top: 1.1em ;
+    line-height: 1.7em;
+}
+
+.card-stat{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4em;
+}
+
+.stat-desc{
+    text-transform: uppercase; 
+    font-family: "Lexend Deca";
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1110px) {
+    
+    .main-card{
+        max-width: 1110px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 540px;
+        grid-template-areas: "btext pic";
+    }
+
+    .card-body{
+        grid-area: btext;
+        text-align: start;
+        padding: 5em 7.5em 4.5em 4.5em;
+    }
+
+    .all-pic{
+        grid-area: pic;
+
+    }
+
+    .card-stat{
+        flex-direction: row;
+        column-gap: 4em;
+    }
+    
+    .main-title{
+        font-size: 2.4rem;
+    }
+
+    .main-desc{
+        margin-top: 1.5em;
+    }
+
+}
