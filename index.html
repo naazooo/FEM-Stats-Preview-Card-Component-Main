@@ -2,32 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="main-bg grid place-content-center">
+  <main>
+    <div class="main-card">
 
-  Get insights that help your business grow.
+      <div class="all-pic accent-bg">
+        <picture>
+          <source media="(min-width: 1110px )" srcset="images/image-header-desktop.jpg">
+          <img src="images/image-header-mobile.jpg" alt="meeting">
+        </picture>
+      </div>
+      
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="card-body card-bg">
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        <div class="text-part">
+          <h1 class="main-title main-head-clr">Get <span class="accent-color">insights</span> that help your business grow. </h1>
+          <p class="main-desc main-p-clr">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.</p>
+        </div>
+        
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="card-stat">
+            <div class="stat-group">
+              <h2 class="stat-title main-head-clr">10k+</h2>
+              <p class="stat-desc stat-head">companies</p>
+            </div>
+
+            <div class="stat-group">
+              <h2 class="stat-title main-head-clr">314</h2>
+              <p class="stat-desc stat-head">templates</p>
+            </div>
+
+            <div class="stat-group">
+              <h2 class="stat-title main-head-clr">12+</h2>
+              <p class="stat-desc stat-head">queries</p>
+            </div>
+
+          </div>
+      </div>
+
+    </div>
+
+  </main>
+
+   
+   
+   
+
+
 </body>
 </html>
